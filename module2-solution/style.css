@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.item {
+  border: 3px solid black;
+  margin-bottom: 10px;
+  background: rgb(157, 157, 157);
+}
+.section-title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  padding: 0.75rem 1.75rem;
+}
+
+section {
+  width: 95vw;
+  max-width: 1134px;
+  margin: 0 auto;
+}
+#chicken {
+  background-color: rosybrown;
+  border-top: none;
+  border-right: none;
+}
+#beef {
+  background-color: red;
+  color: #fff;
+  border-top: none;
+  border-right: none;
+}
+#sushi {
+  background-color: rgb(243, 243, 166);
+  border-top: none;
+  border-right: none;
+}
+@media (min-width: 992px) {
+  .item {
+    float: left;
+    width: 30%;
+    margin-left: 1.66%;
+    margin-right: 1.66%;
+    position: relative;
+  }
+  .item .food-description {
+    clear: left;
+  }
+  .food-item {
+    position: absolute;
+    right: 0;
+    border: 2px solid black;
+    padding: 0.25rem 1.25rem;
+    text-transform: capitalize;
+    clear: both;
+    font-weight: bold;
+  }
+
+  .food-description {
+    margin-top: 40px;
+    clear: both;
+    font-weight: bold;
+    padding: 0.25rem 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .item {
+    float: left;
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    position: relative;
+  }
+  #last {
+    width: 95%;
+    margin-top: 30px;
+  }
+  .food-item {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 2px solid black;
+    padding: 0.25rem 1.25rem;
+    text-transform: capitalize;
+    clear: both;
+    font-weight: bold;
+  }
+  .food-description {
+    margin-top: 40px;
+    clear: both;
+    font-weight: bold;
+    padding: 0.25rem 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .item {
+    width: 95%;
+    margin: 0 auto 30px auto;
+    position: relative;
+  }
+  .food-item {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 2px solid black;
+    padding: 0.25rem 1.25rem;
+    text-transform: capitalize;
+    clear: both;
+    font-weight: bold;
+  }
+  .food-description {
+    margin-top: 40px;
+    clear: both;
+    font-weight: bold;
+    padding: 0.25rem 1rem;
+  }
+}
